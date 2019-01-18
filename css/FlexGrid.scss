@@ -1,0 +1,94 @@
+@mixin myMixin($nombre_colonne,$largeur_goutiere) {
+  $nombre_goutiere: $nombre_colonne - 1;
+  $largeur1colonne: (100% - $nombre_goutiere * $largeur_goutiere) / $nombre_colonne;
+
+  $goutiere: .5%;
+  $nombre_colonne : 12;
+
+  $ombre:4px 4px 8px #7b7b7b;
+  $rotationNeg: -1deg;
+  $rotationPos: 1deg;
+ // $nombre_colonne : 6;
+
+  .container {
+    width: 95%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    margin-left: -$goutiere;
+
+
+  }
+
+  .col {
+    margin-top: $goutiere;
+    padding: 1%;
+    //width: 100%/$nombre_colonne;
+    width: 100%-$goutiere;
+    box-sizing: border-box;
+    //border: solid 1px #000000;
+     margin-bottom: 20px;
+    -moz-box-shadow: $ombre;
+    -webkit-box-shadow: $ombre;
+    box-shadow: $ombre;
+    margin-left: $goutiere;
+  }
+    @media screen and (min-width:480px){
+
+    @for $i from 1 through 12{
+      .s#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-s#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px){
+
+    @for $i from 1 through 12{
+      .m#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-m#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 1025px){
+
+    @for $i from 1 through 12{
+      .l#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-l#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+.rotationPos{
+  transform:rotate($rotationPos);
+  -ms-transform:rotate($rotationPos); /* Internet Explorer */
+  -moz-transform:rotate($rotationPos); /* Firefox */
+  -webkit-transform:rotate($rotationPos); /* Safari et Chrome */
+  -o-transform:rotate($rotationPos); /* Opera */
+}
+.rotationNeg{
+  transform:rotate($rotationNeg);
+  -ms-transform:rotate($rotationNeg); /* Internet Explorer */
+  -moz-transform:rotate($rotationNeg); /* Firefox */
+  -webkit-transform:rotate($rotationNeg); /* Safari et Chrome */
+  -o-transform:rotate($rotationNeg); /* Opera */
+    }
+  }
+
+}

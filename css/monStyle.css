@@ -1,0 +1,252 @@
+body {
+  background: #CDD6D5;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  background: #415B76;
+  display: flex;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-align: center;
+  color: #CDD6D5;
+  margin: auto;
+}
+
+.nav-item:hover {
+  background: #CDD6D5;
+  color: #415B76;
+}
+
+.login-item {
+  text-decoration: none;
+  text-align: center;
+  color: #415B76;
+  background: #CDD6D5;
+  margin: auto;
+}
+
+a#unSelect {
+  text-decoration: none;
+  color: #415B76;
+  background: #CDD6D5;
+  padding: 1.5%;
+}
+
+a#unSelect:hover {
+  background: #415B76;
+  color: #CDD6D5;
+}
+
+.centerIt {
+  font-size: 2em;
+}
+
+.bnt-edit {
+  text-decoration: none;
+  color: #415B76;
+  background: #CDD6D5;
+  padding: 1.5%;
+}
+
+.bnt-edit:hover {
+  background: #415B76;
+  color: #CDD6D5;
+}
+
+.bnt-edit-Con {
+  text-align: center;
+}
+
+.unselectCon {
+  text-align: right;
+}
+
+.tri {
+  text-decoration: none;
+  text-align: center;
+  color: #233656;
+}
+
+.coff_infoS {
+  border: 1px solid #233656;
+  text-align: center;
+}
+
+div.cat {
+  background: #7B9BA6;
+  display: flex;
+}
+
+.cat-item {
+  text-decoration: none;
+  text-align: center;
+  color: #EEF4F2;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.cat-item:hover {
+  background: #EEF4F2;
+  color: #7B9BA6;
+}
+
+.cof_i {
+  text-decoration: none;
+  text-align: center;
+  color: #EEF4F2;
+  margin: auto;
+}
+
+div.cat .active {
+  background: #EEF4F2;
+  color: #7B9BA6;
+}
+
+.prestation {
+  border: 1px solid #7B9BA6;
+  margin: 0.3%;
+}
+
+.ThecoffretS {
+  border: 1px solid #7B9BA6;
+  margin: 0.3%;
+  width: 100%;
+}
+
+#mesCoff {
+  font-size: 2em;
+  text-align: center;
+}
+
+.pres_info {
+  background: #415B76;
+  padding: 2%;
+  margin-bottom: 0.3%;
+  text-align: center;
+  height: 50px;
+}
+
+.coff_info {
+  background: #415B76;
+  padding: 2%;
+  margin-bottom: 0.3%;
+  text-align: center;
+  height: 90px;
+}
+
+.pres_info .col {
+  margin: auto;
+}
+
+.imgContainer {
+  width: 100%;
+}
+
+.presBtn {
+  background: #CDD6D5;
+  text-decoration: none;
+  color: #415B76;
+}
+
+.imgPres {
+  width: 99.6%;
+}
+
+.imgPresDetail {
+  max-height: 40vw;
+}
+
+.pres_Detail {
+  text-align: center;
+}
+
+.myCat {
+  text-decoration: none;
+  color: #415B76;
+}
+
+.presDetail_item {
+  color: #233656;
+  font-size: 2em;
+}
+
+input.input, select.input {
+  margin-top: 20px;
+}
+
+.signupBtn {
+  background: #233656;
+  border: 1px solid #7B9BA6;
+  color: #7B9BA6;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.signupBtn:hover {
+  background: #EEF4F2;
+  color: #7B9BA6;
+}
+
+.form {
+  text-align: center;
+}
+
+.title {
+  color: #233656;
+  font-size: 2em;
+  text-align: center;
+}
+
+div#cofNav {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+h2 {
+  margin: 0;
+}
+
+.profil {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.backg {
+  display: inline-block;
+  padding: 8px;
+  background-color: black;
+  width: 95%;
+}
+
+.imgProfil {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .cat {
+    height: 60vh;
+  }
+
+  .cat-item {
+    padding-top: 11%;
+    padding-bottom: 11%;
+  }
+
+  div#cofNav {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=monStyle.css.map */

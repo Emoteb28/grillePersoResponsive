@@ -1,0 +1,40 @@
+
+  @media screen and (min-width: 250px){
+
+    @for $i from 1 through 12{
+      .s#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-s#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 768px){
+
+    @for $i from 1 through 12{
+      .m#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-m#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+
+  }
+
+
+  @media screen and (min-width: 1025px){
+
+    @for $i from 1 through 12{
+      .l#{$i} {
+        width: ($i * $largeur1colonne) + ($i - 1) * $largeur_goutiere;
+      }
+      .offset-l#{$i} {
+        margin-left: ($i * $largeur1colonne) + $i * $largeur_goutiere;
+      }
+    }
+
+  }
